@@ -1,8 +1,7 @@
 name: "06 - Contexts"
 run-name: 06 - Contexcts | DEBUG - ${{ inputs.DEBUG }}
 on: 
-    push:
-    workflow_dispatch:
+   workflow_dispatch:
         inputs:
             debug:
                 type: boolean
