@@ -9,11 +9,6 @@ inputs:
     description: The working directory of the application
     default: .
     required: false
-<<<<<<< HEAD
-    
-=======
-
->>>>>>> 8dbd22f (feat(17-custom-actions) add workflow and folder new1)
 runs:
   using: composite
   steps:
