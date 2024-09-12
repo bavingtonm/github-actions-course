@@ -10,16 +10,6 @@ inputs:
     description: The working directory of the application
     default: ./17-custom-actions/react-app/
     required: false
-  target-env:
-    description: '"dev" or "prod". Controls whether dev dependencies are installed'
-    default: dev
-    required: false
-
-outputs:
-  installed-deps:
-    description: Whether dependencies were installed or not
-    value: ${{ steps.cache.outputs.cache-hit != 'true' }}
-
 runs:
   using: composite
   steps:
