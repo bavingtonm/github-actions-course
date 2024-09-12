@@ -8,7 +8,7 @@ inputs:
     required: true
   working-dir:
     description: The working directory of the application
-    default: ./04-using-actions/react-app/
+    default: ./17-custom-actions/react-app/
     required: false
   target-env:
     description: '"dev" or "prod". Controls whether dev dependencies are installed'
