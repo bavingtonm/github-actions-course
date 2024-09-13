@@ -6,11 +6,17 @@ on:
       url:
         type: choice
         options:
-          - url_1: 'https://www.google.co.uk'
-          - url_2: 'https://badurl.com'
+          - 'https://www.google.com'
+          - 'https://www.invalid-hfyfbmfdhhgdj.com'
+          - 'invalid-nohdyfgjdjd'
       max_trials:
-         type: string
-         default: 'https://www.google.co.uk'
+        description: Maximum number of trials until actions fails
+        default: '10'
+        required: false
+      delay:
+        description: Delay in seconds between trials
+        default: '5'
+        required: false
 jobs:
   ping-url:
     runs-on: ubuntu-latest
@@ -20,4 +26,6 @@ jobs:
         uses: ./.github/actions/docker-ping-url
         with:
           url: ${{ inputs.url }}
+          max_trials: ${{ inputs.max_trials }}
+          delay: ${{ inputs.delay }}
           
