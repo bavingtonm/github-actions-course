@@ -4,9 +4,13 @@ on:
   workflow_dispatch:
     inputs:
       url:
-        type: string
-        default: 'https://www.google.co.uk'
-
+        type: choice
+        options:
+          - url_1: 'https://www.google.co.uk'
+          - url_2: 'https://badurl.com'
+      max_trials:
+         type: string
+         default: 'https://www.google.co.uk'
 jobs:
   ping-url:
     runs-on: ubuntu-latest
