@@ -11,4 +11,4 @@ jobs:
   e2e-tests:
     uses: bavingtonm/github-actions-course-example-e2e/.github/workflows/e2e.yaml@main
     secrets:
-        access-token: ${{ secrets.GH_TOKEN }}
+      access-token: ${{ secrets.GH_TOKEN }}
