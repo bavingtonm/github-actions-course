@@ -33,7 +33,7 @@ jobs:
         id: deploy
         run: |
           echo "Deploying build artifacts"
-          echo "url=https://www.google.co.uk" >> "$GITHUB_OUTPUT"
+          echo "url=https://www.google.com" >> "$GITHUB_OUTPUT"
 
 
 
